@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail - MWIZERWA Bit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Include the same navigation as blog.html -->
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="MWIZERWA Bit Logo">
+            MWIZERWA Bit
+        </a>
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#testimonials">Testimonials</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+        <h1 id="blog-title">Loading...</h1>
+        <div class="blog-detail-meta">
+            <span id="blog-date"><i class="far fa-calendar"></i> Loading...</span>
+            <span id="blog-author"><i class="far fa-user"></i> Loading...</span>
+            <span id="blog-comments"><i class="far fa-comments"></i> Loading...</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="#" class="back-to-blog" onclick="goBackToBlog(event)">
+            <i class="fas fa-arrow-left"></i> Back to Blog
+        </a>
+    </div>
+
+    <section class="blog-detail section-padding">
+        <div class="container">
+            <article class="blog-detail-content">
+                <img id="blog-image" src="" alt="Blog Detail">
+                <div id="blog-content">
+                    Loading...
+                </div>
+            </article>
+
+            <section class="blog-comments">
+                <h3>Comments</h3>
+                <div id="comments-list">
+                    <!-- Comments will be loaded dynamically -->
+                </div>
+
+                <form class="comment-form" id="comment-form">
+                    <h4>Leave a Comment</h4>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Post Comment</button>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <!-- Include the same footer as blog.html -->
+    <footer>
+        <!-- ... Copy footer from blog.html ... -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>

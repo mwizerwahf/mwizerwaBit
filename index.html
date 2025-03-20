@@ -109,38 +109,38 @@
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-network-wired"></i>
                     <h3>Network Infrastructure</h3>
-                    <p>Design, implementation, and maintenance of robust and scalable network infrastructure solutions tailored to your business requirements.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <p>Design, implementation, and maintenance of robust and scalable network infrastructure solutions.</p>
+                    <a href="javascript:void(0)" class="learn-more" onclick="showServiceModal('network-infrastructure')">Learn More</a>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-shield-alt"></i>
                     <h3>Cybersecurity</h3>
-                    <p>Comprehensive security solutions to protect your digital assets from threats, including firewalls, intrusion detection, and security audits.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <p>Comprehensive security solutions to protect your digital assets from threats.</p>
+                    <a href="javascript:void(0)" class="learn-more" onclick="showServiceModal('cybersecurity')">Learn More</a>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-cloud"></i>
                     <h3>Cloud Solutions</h3>
-                    <p>Scalable cloud infrastructure services, including cloud migration, management, and optimization to enhance your business efficiency.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <p>Scalable cloud infrastructure services, including migration and optimization.</p>
+                    <a href="javascript:void(0)" class="learn-more" onclick="showServiceModal('cloud-solutions')">Learn More</a>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-server"></i>
                     <h3>IT Infrastructure</h3>
-                    <p>End-to-end IT infrastructure solutions, including server setup, virtualization, storage solutions, and disaster recovery planning.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <p>End-to-end IT infrastructure solutions, including server setup and virtualization.</p>
+                    <a href="javascript:void(0)" class="learn-more" onclick="showServiceModal('it-infrastructure')">Learn More</a>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-headset"></i>
                     <h3>IT Support</h3>
-                    <p>Reliable IT support services with quick response times to ensure your systems run smoothly and minimize downtime.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <p>Reliable IT support services with quick response times.</p>
+                    <a href="javascript:void(0)" class="learn-more" onclick="showServiceModal('it-support')">Learn More</a>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-laptop-code"></i>
                     <h3>Software Solutions</h3>
-                    <p>Custom software development and integration services to streamline your business processes and improve productivity.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <p>Custom software development and integration services.</p>
+                    <a href="javascript:void(0)" class="learn-more" onclick="showServiceModal('software-solutions')">Learn More</a>
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
                     <div class="stat-text">Clients Served</div>
                 </div>
                 <div class="stat-item animate-on-scroll">
-                    <div class="stat-number">1000+</div>
+                    <div class="stat-number">1000+</</div>
                     <div class="stat-text">Projects Completed</div>
                 </div>
                 <div class="stat-item animate-on-scroll">
@@ -286,6 +286,139 @@
         </div>
     </section>
 
+    <!-- Service Modals -->
+    <div id="network-infrastructure" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3>Network Infrastructure</h3>
+            </div>
+            <div class="modal-body">
+                <p>Our comprehensive network infrastructure solutions include:</p>
+                <ul>
+                    <li>Network Design and Implementation</li>
+                    <li>Wireless Network Solutions</li>
+                    <li>Network Maintenance and Support</li>
+                    <li>Network Security Implementation</li>
+                    <li>Performance Optimization</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('network-infrastructure')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cybersecurity" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3>Cybersecurity Solutions</h3>
+            </div>
+            <div class="modal-body">
+                <p>Our cybersecurity services include:</p>
+                <ul>
+                    <li>Security Audits and Assessments</li>
+                    <li>Firewall Implementation</li>
+                    <li>Threat Detection and Prevention</li>
+                    <li>Data Encryption Services</li>
+                    <li>Security Training Programs</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('cybersecurity')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cloud-solutions" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3>Cloud Solutions</h3>
+            </div>
+            <div class="modal-body">
+                <p>Our cloud services include:</p>
+                <ul>
+                    <li>Cloud Migration Services</li>
+                    <li>Cloud Infrastructure Management</li>
+                    <li>Cloud Security Solutions</li>
+                    <li>Hybrid Cloud Implementation</li>
+                    <li>Cloud Optimization Services</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('cloud-solutions')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="it-infrastructure" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3>IT Infrastructure</h3>
+            </div>
+            <div class="modal-body">
+                <p>Our IT infrastructure services include:</p>
+                <ul>
+                    <li>Server Setup and Management</li>
+                    <li>Storage Solutions</li>
+                    <li>Virtualization Services</li>
+                    <li>Disaster Recovery Planning</li>
+                    <li>Infrastructure Monitoring</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('it-infrastructure')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="it-support" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3>IT Support</h3>
+            </div>
+            <div class="modal-body">
+                <p>Our IT support services include:</p>
+                <ul>
+                    <li>24/7 Technical Support</li>
+                    <li>Remote Support Services</li>
+                    <li>On-site Support</li>
+                    <li>Help Desk Services</li>
+                    <li>System Maintenance</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('it-support')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="software-solutions" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3>Software Solutions</h3>
+            </div>
+            <div class="modal-body">
+                <p>Our software solutions include:</p>
+                <ul>
+                    <li>Custom Software Development</li>
+                    <li>Software Integration</li>
+                    <li>Application Modernization</li>
+                    <li>Software Maintenance</li>
+                    <li>Quality Assurance</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('software-solutions')">Close</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -335,5 +468,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="services.js"></script>
 </body>
 </html>

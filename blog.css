@@ -1,5 +1,5 @@
 .blog-container {
-    padding: 100px 5% 50px;
+    padding: 50px 0;
 }
 
 .blog-grid {
@@ -10,15 +10,16 @@
 }
 
 .blog-card {
-    background: #fff;
-    border-radius: 10px;
+    background: var(--background);
+    border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    transition: var(--transition);
 }
 
 .blog-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .blog-card img {
@@ -32,13 +33,88 @@
 }
 
 .read-more {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     color: var(--primary);
     text-decoration: none;
-    margin-top: 1rem;
-    font-weight: bold;
+    font-weight: 600;
+    transition: var(--transition);
 }
 
 .read-more:hover {
-    text-decoration: underline;
+    gap: 0.8rem;
+}
+
+.blog-header {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/blog-header.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--background);
+    padding: 80px 1rem 0; /* Adjusted padding to account for fixed nav */
+    margin-top: 0; /* Remove margin-top */
+    position: relative; /* Add position relative */
+    z-index: 1; /* Add z-index */
+}
+
+.blog-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.blog-search-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+#blog-search {
+    width: 100%;
+    padding: 15px 25px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.blog-content h2 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.blog-content p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.blog-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .blog-header h1 {
+        font-size: 2rem;
+    }
+    
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
 }
